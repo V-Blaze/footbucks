@@ -1,6 +1,6 @@
 /* eslint-disable */
 
-import { teamPic } from "../assets/images";
+import { teamPic, partnerLogo, telegram, instagram, x, facebook, discord, } from "../assets/images";
 
 export const teams = [
   {
@@ -94,5 +94,52 @@ export const roadmaps = [
     title: 'Achieving New Heights ',
     desc: "FOOTBUCKS Spotlight: Create a spotlight series showcasing inspiring football stories from the community, shinning a light on the game’s transformative power...",
     css: "md:place-self-start"
+  },
+]
+
+export const partners = [
+  {
+    name: "Trust Wallet",
+    logo: partnerLogo
+  },
+  {
+    name: "Twitter",
+    logo: partnerLogo
+  },
+  {
+    name: "Binance",
+    logo: partnerLogo
+  },
+  {
+    name: "PancakeSwap",
+    logo: partnerLogo
+  },
+]
+
+export const communities = [
+  {
+    name: "Telegram",
+    link: "https://telegram.com",
+    logo: telegram
+  },
+  {
+    name: "Instagram",
+    link: "https://instagram.com",
+    logo: instagram
+  },
+  {
+    name: "X",
+    link: "https://x.com",
+    logo: x
+  },
+  {
+    name: "Facebook",
+    link: "https://facebook.com",
+    logo: facebook
+  },
+  {
+    name: "Discord",
+    link: "https://discord.com",
+    logo: discord
   },
 ]

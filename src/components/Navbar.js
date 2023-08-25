@@ -15,13 +15,13 @@ const Navbar = () => {
           FOOTBUCKS
         </a>
         <ul className="hidden md:flex items-center gap-3 font-mono">
-          <li className=" hover:text-orange-500"><a href="#home">Home</a></li>
-          <li className=" hover:text-orange-500"><a href="#about">About-Us</a></li>
-          <li className=" hover:text-orange-500"><a href="#blogs">Blogs</a></li>
-          <li className=" hover:text-orange-500"><a href="#tokenomics">Tokenomics</a></li>
-          <li className=" hover:text-orange-500"><a href="#community">Community</a></li>
-          <li className=" hover:text-orange-500"><a href="#faq">FAQs</a></li>
-          <li className=" hover:text-orange-500"><a href="#contact">Contact-Us</a></li>
+          <li className=" hover:text-orange-500 hover:border hover:border-[#FD8002] rounded-lg"><a href="#home">Home</a></li>
+          <li className=" hover:text-orange-500 hover:border hover:border-[#FD8002] rounded-lg"><a href="#about">About-Us</a></li>
+          <li className=" hover:text-orange-500 hover:border hover:border-[#FD8002] rounded-lg"><a href="#blogs">Blogs</a></li>
+          <li className=" hover:text-orange-500 hover:border hover:border-[#FD8002] rounded-lg"><a href="#tokenomics">Tokenomics</a></li>
+          <li className=" hover:text-orange-500 hover:border hover:border-[#FD8002] rounded-lg"><a href="#community">Community</a></li>
+          <li className=" hover:text-orange-500 hover:border hover:border-[#FD8002] rounded-lg"><a href="#faq">FAQs</a></li>
+          <li className=" hover:text-orange-500 hover:border hover:border-[#FD8002] rounded-lg"><a href="#contact">Contact-Us</a></li>
         </ul>
         <button
           type="button"
