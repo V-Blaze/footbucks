@@ -1,10 +1,14 @@
 import React from 'react';
+import { Input, Textarea } from '@material-tailwind/react';
 
 // ICONS
 import { BsArrowRightShort } from 'react-icons/bs';
+import { FaUserTag, FaMailBulk } from 'react-icons/fa';
 
 // COMPONENTS
-import { Team, Allocation, Roadmap } from '../components';
+import {
+  Team, Allocation, Roadmap, FAQAccordion,
+} from '../components';
 
 // ASSETS
 import { logo1 } from '../assets/images';
@@ -127,7 +131,7 @@ const Home = () => {
             <ul className="flex flex-col gap-4">
               {allocations.map((allocation) => (
                 <Allocation
-                  key={allocation.amount}
+                  key={allocation.id}
                   allocation={allocation}
                 />
               ))}
@@ -140,8 +144,8 @@ const Home = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-20 my-4 mx-6">
           {teams.map((team) => (
             <Team
+              key={team.id}
               team={team}
-              key={team.name}
             />
           ))}
         </div>
@@ -167,38 +171,61 @@ const Home = () => {
         <h2 className=" font-mono font-black text-3xl text-center my-4">Roadmap</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10 w-full p-6">
           {roadmaps.map((roadmap) => (
-            <>
-              <Roadmap
-                key={roadmap.title}
-                roadmap={roadmap}
-              />
-            </>
+            <Roadmap
+              key={roadmap.id}
+              roadmap={roadmap}
+            />
           ))}
         </div>
       </section>
       <section className="mx-4 my-10">
         <h2 className=" font-mono font-black text-3xl text-center my-4">TRUSTED BY</h2>
-        <div className=" grid grid-cols-2 md:grid-cols-4 gap-8 bg">
+        <div className=" grid grid-cols-2 md:grid-cols-4 gap-8">
           {partners.map((partner) => (
-            <div key={partner.name} className="border border-[#FD8002] rounded-lg hover:bg-[#FD8002]">
+            <div key={partner.id} className="border border-[#FD8002] rounded-lg hover:bg-[#FD8002]">
               <img src={partner.logo} alt={partner.name} />
             </div>
           ))}
         </div>
       </section>
-      <section id="Community" className="mx-4 my-10">
+      <section id="community" className="mx-4 my-10">
         <h2 className=" font-mono font-black text-2xl text-center my-4">Join Our Community</h2>
-        <div className="flex justify-between items-center mx-10">
+        <div className="flex justify-between items-center mx-[20%]">
           {communities.map((cmty) => (
             <button
+              key={cmty.id}
               type="button"
-              key={cmty.name}
               className=" border-none outline-none hover:bg-[#FD8002] rounded-lg"
               onClick={() => openInNewTab(cmty.link)}
             >
               <img src={cmty.logo} alt={cmty.name} className="h-[46px] w-[46px] md:h-[93px] md:w-[93px]" />
             </button>
           ))}
+        </div>
+      </section>
+      <section id="faq" className="mx-4 my-10">
+        <h2 className=" font-mono font-black text-2xl text-center my-4">FAQs</h2>
+        <div className="p-16">
+          <FAQAccordion />
+        </div>
+      </section>
+      <section id="contact" className="mx-4 my-10">
+        <div className="bg-[#FFA409] px-4 py-14 rounded-md">
+          <h3 className="font-mono text-white text-2xl text-center mb-4">Contact Us</h3>
+          <form className="flex flex-col">
+            <div className="bg-white p-6 flex flex-col gap-5 rounded-lg">
+              <Input label="Your Name" icon={<FaUserTag />} />
+              <Input label="Email" icon={<FaMailBulk />} />
+              <Textarea size="lg" label="Message" />
+            </div>
+            <button
+              type="submit"
+              className=" my-6 text-[#FFA409] bg-white self-center py-4 px-8 rounded-xl
+              shadow-[4.0px_8.0px_8.0px_rgba(0,0,0,0.38)] hover:bg-orange-500 hover:text-white"
+            >
+              Send Message
+            </button>
+          </form>
         </div>
       </section>
     </>
