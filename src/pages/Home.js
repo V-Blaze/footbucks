@@ -4,13 +4,13 @@ import React from 'react';
 import { BsArrowRightShort } from 'react-icons/bs';
 
 // COMPONENTS
-import { Team, Allocation } from '../components';
+import { Team, Allocation, Roadmap } from '../components';
 
 // ASSETS
 import { logo1 } from '../assets/images';
 
 // CONSTANTS
-import { teams, allocations } from '../constants';
+import { teams, allocations, roadmaps } from '../constants';
 
 const Home = () => (
   <>
@@ -136,6 +136,36 @@ const Home = () => (
             team={team}
             key={team.name}
           />
+        ))}
+      </div>
+    </section>
+    <section className="mx-4 my-20">
+      <h2 className=" font-mono font-black text-2xl text-center my-3">Explore Our NFTs</h2>
+      <p className=" px-12 items-center">
+        Lorem ipsum dolor et siprum rubum Lorem ipsum dolor et siprum
+        rubum Lorem ipsum dolor et siprum rubum Lorem ipsum do
+      </p>
+      <div className="grid grid-cols-2 md:grid-cols-4 gap-6 p-16 place-content-center place-items-center relative mt-4">
+        <div className="absolute bg-slate-500 top-0 bottom-0 left-0 right-0 flex justify-center items-center opacity-[70%] rounded-lg">
+          <span className=" font-mono text-orange-500 font-bold text-3xl -rotate-45">COMING SOON!!!</span>
+        </div>
+        <div className="h-[150px] w-[150px] bg-[#D9D9D9]" />
+        <div className="h-[150px] w-[150px] bg-[#D9D9D9]" />
+        <div className="h-[150px] w-[150px] bg-[#D9D9D9]" />
+        <div className="h-[150px] w-[150px] bg-[#D9D9D9]" />
+      </div>
+    </section>
+    <section className="mx-4 my-10">
+      <h5 className="text-xl font-serif text-center">OUR ROADMAP</h5>
+      <h2 className=" font-mono font-black text-3xl text-center my-4">Roadmap</h2>
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-10 w-full p-6">
+        {roadmaps.map((roadmap) => (
+          <>
+            <Roadmap
+              key={roadmap.title}
+              roadmap={roadmap}
+            />
+          </>
         ))}
       </div>
     </section>

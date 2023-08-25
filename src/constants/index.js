@@ -69,3 +69,30 @@ export const allocations = [
     color: "text-[#000000]"
   },
 ];
+
+export const roadmaps = [
+  {
+    year: 'YEAR 1',
+    title: 'Laying the Foundation ',
+    desc: "Create and Expand Social Communities: Establish active Telegram, X, Facebook. Initiate engaging discussions, host AMAs, and incentivize participation with referral rewards and community contests...",
+    css: "md:place-self-start"
+  },
+  {
+    year: 'YEAR 2',
+    title: 'Empowering the community ',
+    desc: "Rare NFT Collection: Launch a rare NFT collect to commemorate significant milestones in the community’s journey. Reward early contributors and community members with exclusive football-themed NFTs...",
+    css: "md:place-self-end"
+  },
+  {
+    year: 'YEAR 3',
+    title: 'Expanding and Empowering Beyond Boundaries ',
+    desc: "FOOTBUCKS Academy: Establish the footbucks academy, dedicated to nurturing and sponsoring promising football talents. Pave the way for the next generation of football stars, elevating the Footbucks brand further...",
+    css: "md:place-self-center md:col-span-2"
+  },
+  {
+    year: 'YEAR 4',
+    title: 'Achieving New Heights ',
+    desc: "FOOTBUCKS Spotlight: Create a spotlight series showcasing inspiring football stories from the community, shinning a light on the game’s transformative power...",
+    css: "md:place-self-start"
+  },
+]

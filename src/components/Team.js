@@ -10,7 +10,9 @@ const Team = ({ team }) => {
   } = team;
 
   return (
-    <div className="shadow-[4.0px_8.0px_8.0px_rgba(0,0,0,0.38)] p-6 flex flex-col gap-9 rounded-md">
+    <div className="shadow-[4.0px_8.0px_8.0px_rgba(0,0,0,0.38)] p-6 flex flex-col gap-9 rounded-md
+    hover:shadow-[5px_5px_rgba(0,_98,_90,_0.4),_10px_10px_rgba(0,_98,_90,_0.3),_15px_15px_rgba(0,_98,_90,_0.2),_20px_20px_rgba(0,_98,_90,_0.1),_25px_25px_rgba(0,_98,_90,_0.05)]"
+    >
       <div className="flex gap-4">
         <img src={pic} alt="team pic" />
         <div className="flex flex-col gap-2">
