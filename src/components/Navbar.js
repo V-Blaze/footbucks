@@ -14,7 +14,7 @@ const Navbar = () => {
           <img src={mainLogo} alt="main logo" />
           FOOTBUCKS
         </a>
-        <ul className="flex items-center gap-3 font-mono">
+        <ul className="hidden md:flex items-center gap-3 font-mono">
           <li className=" hover:text-orange-500"><a href="#home">Home</a></li>
           <li className=" hover:text-orange-500"><a href="#about">About-Us</a></li>
           <li className=" hover:text-orange-500"><a href="#blogs">Blogs</a></li>
