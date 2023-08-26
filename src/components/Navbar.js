@@ -1,11 +1,18 @@
-import React from 'react';
-import { useNavigate } from 'react-router-dom';
+import React, { useState, useEffect } from 'react';
+import { useNavigate, useLocation } from 'react-router-dom';
 
 // ASSETS
 import { mainLogo } from '../assets/images';
 
 const Navbar = () => {
+  const [curPath, setCurPath] = useState('');
+
   const navigate = useNavigate();
+  const location = useLocation();
+
+  useEffect(() => {
+    setCurPath(location.pathname);
+  }, [location.pathname]);
 
   return (
     <header className="flex bg-[#685029] text-white">
@@ -23,13 +30,23 @@ const Navbar = () => {
           <li className=" hover:text-orange-500 hover:border hover:border-[#FD8002] rounded-lg"><a href="#faq">FAQs</a></li>
           <li className=" hover:text-orange-500 hover:border hover:border-[#FD8002] rounded-lg"><a href="#contact">Contact-Us</a></li>
         </ul>
-        <button
-          type="button"
-          className=" border-none outline-none bg-[#D5A554] px-6 py-2 rounded-full text-black hover:text-white hover:bg-orange-500 "
-          onClick={() => navigate('/presale')}
-        >
-          PRESALE
-        </button>
+        {curPath === '/presale' ? (
+          <button
+            type="button"
+            className=" border-none outline-none bg-[#D5A554] px-6 py-2 rounded-full text-black hover:text-white hover:bg-orange-500 "
+          >
+            Connect Wallet
+          </button>
+        ) : (
+          <button
+            type="button"
+            className=" border-none outline-none bg-[#D5A554] px-6 py-2 rounded-full text-black hover:text-white hover:bg-orange-500 "
+            onClick={() => navigate('/presale')}
+          >
+            PRESALE
+          </button>
+        )}
+
       </nav>
     </header>
   );
