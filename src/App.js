@@ -1,10 +1,28 @@
+import { Route, Routes } from 'react-router-dom';
+
+// PAGES
+import { Home, Presale } from './pages';
+
+// COMPONENTS
+import { Navbar, Footer } from './components';
+
+// STYLESHEET
 import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <h1 className=" text-3xl text-orange-500 font-black text-center">FOOTBUCKS</h1>
-    </div>
+    <>
+      <Navbar />
+      <main>
+        <>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/presale" element={<Presale />} />
+          </Routes>
+        </>
+      </main>
+      <Footer />
+    </>
   );
 }
 
