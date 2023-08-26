@@ -8,7 +8,9 @@ import instagram from './instagram.svg';
 import x from './x.svg';
 import facebook from './facebook.svg';
 import discord from './discord.svg';
+import footerLogo from './footer-logo.svg';
 
 export {
-  mainLogo, logo1, logo2, teamPic, partnerLogo, telegram, instagram, x, facebook, discord,
+  mainLogo, logo1, logo2, teamPic, partnerLogo,
+  telegram, instagram, x, facebook, discord, footerLogo,
 };
