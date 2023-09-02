@@ -1,4 +1,5 @@
 import { createAsyncThunk } from '@reduxjs/toolkit';
+import { ethers } from '../../web3/ethers';
 
 const initialState = {
   loading: false,
@@ -29,6 +30,19 @@ export default function reducer(state = initialState, action) {
 // Connect user's wallet
 export const connectWallet = createAsyncThunk(CONNECT_WALLET, async (_, { rejectWithValue }) => {
   try {
+    if (window.ethereum) {
+      const provider = new ethers.providers.Web3Provider(window.ethereum, 'any');
+      const wallets = await provider.send('eth_requestAccounts');
+      const network = await provider.getNetwork();
+      const data = {
+        chainID: network.chainId,
+        networkName: network.name,
+        address: wallets[0],
+      };
+        // console.log(network);
+        // console.log(wallets);
+      return data;
+    }
     return {};
   } catch (error) {
     return rejectWithValue(error.message);
