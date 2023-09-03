@@ -1,4 +1,5 @@
 import { Route, Routes } from 'react-router-dom';
+import { Toaster } from 'react-hot-toast';
 
 // PAGES
 import { Home, Presale } from './pages';
@@ -12,6 +13,7 @@ import './App.css';
 function App() {
   return (
     <>
+      <Toaster />
       <Navbar />
       <main>
         <>
