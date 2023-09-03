@@ -9,8 +9,12 @@ import x from './x.svg';
 import facebook from './facebook.svg';
 import discord from './discord.svg';
 import footerLogo from './footer-logo.svg';
+import missionIcon from './mission_image.png';
+import vissionIcon from './vision_image.png';
+import heroGif from '../videos/hero-gif.gif';
 
 export {
   mainLogo, logo1, logo2, teamPic, partnerLogo,
   telegram, instagram, x, facebook, discord, footerLogo,
+  missionIcon, vissionIcon, heroGif,
 };

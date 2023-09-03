@@ -11,7 +11,9 @@ import {
 } from '../components';
 
 // ASSETS
-import { logo1 } from '../assets/images';
+import {
+  logo1, missionIcon, vissionIcon, heroGif,
+} from '../assets/images';
 
 // CONSTANTS
 import {
@@ -23,10 +25,13 @@ import openInNewTab from '../utils';
 
 const Home = () => (
   <>
-    <section id="home" className=" flex h-[80vh] bg-[#D9D9D9] justify-center items-end">
+    <section id="home" className="relative flex h-[80vh] bg-[#D9D9D9] justify-center items-end">
+      <div className="absolute inset-0">
+        <img src={heroGif} alt="Background GIF" className="object-cover w-full h-full" />
+      </div>
       <button
         type="button"
-        className="flex items-center border-none outline-none text-white font-bold
+        className="relative z-10 flex items-center border-none outline-none text-white font-bold
         bg-gradient-to-r from-[#FFA409] via-yellow-300 to-[#FFA409] mb-[20%] px-6 py-2 rounded-full
         hover:bg-gradient-to-r hover:from-orange-500 hover:via-yellow-300 hover:to-[#e2d0b1]"
       >
@@ -51,12 +56,70 @@ const Home = () => (
         </div>
       </div>
     </section>
+    <section className="m-5 flex flex-col justify-center items-center">
+      <div>
+        <h4 className=" font-bold text-2xl text-center md:pb-[30px]">FOOTBUCKS ECOSYSTEM</h4>
+        <div className="grid grid-cols-2 md:grid-cols-5 gap-[82px] md:gap-3 pt-[80px] border-t-2 border-black ">
+          <div className="relative bg-[#FFA409] text-black rounded-xl p-4 text-xs ">
+            <span className="absolute top-[-82px] right-[50%] border-r-2 border-black h-[85px]" />
+            🎟 FOOTBUCKS NFT Marketplace:
+            A marketplace that transcends traditional memorabilia,
+            offering exclusive NFTs that encapsulate
+            iconic moments and memories from the world of football
+          </div>
+          <div className="relative bg-[#FFA409] text-black rounded-xl p-4 text-xs ">
+            <span className="absolute top-[-82px] right-[50%] border-r-2 border-black h-[85px]" />
+            ⚖ Governance & Rewards: We empower our community with governance tokens,
+            ensuring that every voice is heard in shaping the FOOTBUCKS ecosystem.
+            Active participation is rewarded, ensuring that the
+            community thrives together.
+          </div>
+          <div className="relative bg-[#FFA409] text-black rounded-xl p-4 text-xs ">
+            <span className="absolute top-[-82px] md:top-[-112px] right-[50%] border-r-2 border-black h-[85px] md:h-[115px]" />
+            🌐 FOOTBUCKS Social Platform: A dedicated
+            space where fans, players, and enthusiasts
+            converge to share their passion, engage in
+            discussions, and celebrate the magic of football.
+          </div>
+          <div className="relative bg-[#FFA409] text-black rounded-xl p-4 text-xs ">
+            <span className="absolute top-[-82px] right-[50%] border-r-2 border-black h-[85px]" />
+            🏆 FOOTBUCKS Academy: Nurturing
+            future stars is at the heart of our mission.
+            The FOOTBUCKS Academy is our commitment to
+            the growth and development of budding football talents
+          </div>
+          <div className="relative bg-[#FFA409] text-black rounded-xl p-4 text-xs ">
+            <span className="absolute top-[-82px] right-[50%] border-r-2 border-black h-[85px]" />
+            ⚽ FOOTBUCKS Football Clubs:
+            Our ecosystem takes you beyond
+            the stands. Own a part of football history by investing
+            in and co-owning football clubs, forging
+            an unbreakable bond between fans and their
+            favorite teams.
+          </div>
+        </div>
+      </div>
+    </section>
+    <section className=" mx-5 my-16 flex flex-col justify-center items-center">
+      <iframe
+        src="https://drive.google.com/file/d/163Uzp92pGwzqIyY7du4v6vboFGNvWRN-/preview"
+        className="w-[90%] h-80 border-2 border-orange-500 rounded-lg dark:border-gray-700"
+        allow="autoplay"
+        title="FootBucks"
+      />
+    </section>
     <section className="mx-5 my-12 flex flex-col md:flex-row gap-6 md:gap-12">
       <div className="flex flex-col gap-4">
         <div
-          className="h-[377px] w-[80%] md:w-[90%] bg-black self-center rounded-lg
+          className=" bg-black self-center rounded-lg
           bg-gradient-to-r from-[#FFA409] via-[#a37423] to-[#1b1303]"
-        />
+        >
+          <img
+            src={missionIcon}
+            alt="Mission"
+            className=" h-80 w-auto"
+          />
+        </div>
         <div>
           <h3 className="font-mono text-[#FFA409] md:font-bold text-2xl mb-4 text-center ">OUR MISSION</h3>
           <p className=" text-center">
@@ -72,9 +135,15 @@ const Home = () => (
       </div>
       <div className="flex flex-col gap-4">
         <div
-          className="h-[377px] w-[80%] md:w-[90%] bg-black self-center rounded-lg
+          className=" bg-black self-center rounded-lg
           bg-gradient-to-r from-[#FFA409] via-[#a37423] to-[#1b1303]"
-        />
+        >
+          <img
+            src={vissionIcon}
+            alt="vission"
+            className=" h-80 w-auto"
+          />
+        </div>
         <div>
           <h3 className="font-mono text-[#FFA409] md:font-bold text-2xl mb-4 text-center ">OUR VISION</h3>
           <p className=" text-center">
