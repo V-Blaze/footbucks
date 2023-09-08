@@ -1,9 +1,7 @@
 import React from 'react';
-import { Input, Textarea } from '@material-tailwind/react';
 
 // ICONS
 import { BsArrowRightShort } from 'react-icons/bs';
-import { FaUserTag, FaMailBulk } from 'react-icons/fa';
 
 // COMPONENTS
 import {
@@ -263,25 +261,6 @@ const Home = () => (
       <h2 className=" font-mono font-black text-2xl text-center my-4">FAQs</h2>
       <div className="p-16">
         <FAQAccordion />
-      </div>
-    </section>
-    <section id="contact" className="mx-4 my-10">
-      <div className="bg-[#FFA409] px-4 py-14 rounded-md">
-        <h3 className="font-mono text-white text-2xl text-center mb-4">Contact Us</h3>
-        <form className="flex flex-col">
-          <div className="bg-white p-6 flex flex-col gap-5 rounded-lg">
-            <Input label="Your Name" icon={<FaUserTag />} />
-            <Input label="Email" icon={<FaMailBulk />} />
-            <Textarea size="lg" label="Message" />
-          </div>
-          <button
-            type="submit"
-            className=" my-6 text-[#FFA409] bg-white self-center py-4 px-8 rounded-xl
-              shadow-[4.0px_8.0px_8.0px_rgba(0,0,0,0.38)] hover:bg-orange-500 hover:text-white"
-          >
-            Send Message
-          </button>
-        </form>
       </div>
     </section>
   </>

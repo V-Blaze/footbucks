@@ -59,7 +59,6 @@ const Navbar = () => {
           <li className=" hover:text-orange-500 hover:border hover:border-[#FD8002] rounded-lg"><a href="#tokenomics">Tokenomics</a></li>
           <li className=" hover:text-orange-500 hover:border hover:border-[#FD8002] rounded-lg"><a href="#community">Community</a></li>
           <li className=" hover:text-orange-500 hover:border hover:border-[#FD8002] rounded-lg"><a href="#faq">FAQs</a></li>
-          <li className=" hover:text-orange-500 hover:border hover:border-[#FD8002] rounded-lg"><a href="#contact">Contact-Us</a></li>
         </ul>
         {curPath === '/presale' ? (
           <button
