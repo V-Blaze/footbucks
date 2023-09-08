@@ -7,17 +7,17 @@ import { FaUserTag, FaMailBulk } from 'react-icons/fa';
 
 // COMPONENTS
 import {
-  Team, Allocation, Roadmap, FAQAccordion,
+  Allocation, Roadmap, FAQAccordion,
 } from '../components';
 
 // ASSETS
 import {
-  logo1, missionIcon, vissionIcon, heroGif,
+  footbucksLogo, missionIcon, vissionIcon, heroGif, NFT1, NFT2,
 } from '../assets/images';
 
 // CONSTANTS
 import {
-  teams, allocations, roadmaps, partners, communities,
+  allocations, roadmaps, communities,
 } from '../constants';
 
 // UTILITIES
@@ -25,10 +25,15 @@ import openInNewTab from '../utils';
 
 const Home = () => (
   <>
-    <section id="home" className="relative flex h-[80vh] bg-[#D9D9D9] justify-center items-end">
+    <section id="home" className="relative flex flex-col h-[80vh] bg-[#D9D9D9] justify-between items-center">
       <div className="absolute inset-0">
         <img src={heroGif} alt="Background GIF" className="object-cover w-full h-full" />
       </div>
+      <h1
+        className="relative z-10 flex items-start border-none outline-none text-5xl text-[#FFA409] font-extrabold mt-[5%]"
+      >
+        FOOTBUCKS
+      </h1>
       <button
         type="button"
         className="relative z-10 flex items-center border-none outline-none text-white font-bold
@@ -52,7 +57,7 @@ const Home = () => (
           </p>
         </div>
         <div className="flex">
-          <img src={logo1} alt="footbucks logo" className="logo-1 border border-orange-500 rounded-full" />
+          <img src={footbucksLogo} alt="footbucks logo" className="logo-1 h-[350px] w-[350px] border border-orange-500 rounded-full" />
         </div>
       </div>
     </section>
@@ -111,8 +116,7 @@ const Home = () => (
     <section className="mx-5 my-12 flex flex-col md:flex-row gap-6 md:gap-12">
       <div className="flex flex-col gap-4">
         <div
-          className=" bg-black self-center rounded-lg
-          bg-gradient-to-r from-[#FFA409] via-[#a37423] to-[#1b1303]"
+          className=" "
         >
           <img
             src={missionIcon}
@@ -135,8 +139,7 @@ const Home = () => (
       </div>
       <div className="flex flex-col gap-4">
         <div
-          className=" bg-black self-center rounded-lg
-          bg-gradient-to-r from-[#FFA409] via-[#a37423] to-[#1b1303]"
+          className=""
         >
           <img
             src={vissionIcon}
@@ -207,30 +210,26 @@ const Home = () => (
       </div>
     </section>
     <section className="mx-4 my-20">
-      <h2 className=" font-mono font-black text-3xl text-center my-3">MEET OUR TEAM</h2>
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-20 my-4 mx-6">
-        {teams.map((team) => (
-          <Team
-            key={team.id}
-            team={team}
-          />
-        ))}
-      </div>
-    </section>
-    <section className="mx-4 my-20">
       <h2 className=" font-mono font-black text-2xl text-center my-3">Explore Our NFTs</h2>
       <p className=" px-12 items-center text-center">
-        Lorem ipsum dolor et siprum rubum Lorem ipsum dolor et siprum
-        rubum Lorem ipsum dolor et siprum rubum Lorem ipsum do
+        Rare NFT Collection
       </p>
       <div className="grid grid-cols-2 md:grid-cols-4 gap-6 p-16 place-content-center place-items-center relative mt-4">
         <div className="absolute bg-slate-500 top-0 bottom-0 left-0 right-0 flex justify-center items-center opacity-[90%] rounded-lg">
           <span className=" font-mono text-orange-500 font-bold text-3xl -rotate-45">COMING SOON!!!</span>
         </div>
-        <div className="h-[150px] w-[150px] bg-[#D9D9D9]" />
-        <div className="h-[150px] w-[150px] bg-[#D9D9D9]" />
-        <div className="h-[150px] w-[150px] bg-[#D9D9D9]" />
-        <div className="h-[150px] w-[150px] bg-[#D9D9D9]" />
+        <div className="h-[150px] w-[150px] bg-[#D9D9D9] rounded-lg">
+          <img src={NFT1} alt="NFT1" className="rounded-lg" />
+        </div>
+        <div className="h-[150px] w-[150px] bg-[#D9D9D9] rounded-lg">
+          <img src={NFT2} alt="NFT1" className="rounded-lg" />
+        </div>
+        <div className="h-[150px] w-[150px] bg-[#D9D9D9] rounded-lg">
+          <img src={NFT1} alt="NFT1" className="rounded-lg" />
+        </div>
+        <div className="h-[150px] w-[150px] bg-[#D9D9D9] rounded-lg">
+          <img src={NFT2} alt="NFT1" className="rounded-lg" />
+        </div>
       </div>
     </section>
     <section className="mx-4 my-10">
@@ -242,16 +241,6 @@ const Home = () => (
             key={roadmap.id}
             roadmap={roadmap}
           />
-        ))}
-      </div>
-    </section>
-    <section className="mx-4 my-10">
-      <h2 className=" font-mono font-black text-3xl text-center my-4">TRUSTED BY</h2>
-      <div className=" grid grid-cols-2 md:grid-cols-4 gap-8">
-        {partners.map((partner) => (
-          <div key={partner.id} className="border border-[#FD8002] rounded-lg hover:bg-[#FD8002]">
-            <img src={partner.logo} alt={partner.name} />
-          </div>
         ))}
       </div>
     </section>

@@ -1,6 +1,6 @@
 /* eslint-disable */
 
-import { teamPic, partnerLogo, telegram, instagram, x, facebook, discord, } from "../assets/images";
+import { teamPic, partnerLogo, telegram, instagram, x, facebook, discord, x2, } from "../assets/images";
 
 export const teams = [
   {
@@ -28,59 +28,39 @@ export const teams = [
 
 export const allocations = [
   {
-    amount: "8.9% Seed",
+    amount: "5% Presale",
     color: "text-[#F37500]",
     id: "1"
   },
   {
-    amount: "9.1% Private",
+    amount: "15% Public Sale",
     color: "text-[#FF0303]",
     id: "2"
   },
   {
-    amount: "5% Advisors",
+    amount: "15% Team",
     color: "text-[#FFE500]",
     id: "3"
   },
   {
-    amount: "12% Team",
+    amount: "20% Ecosystem",
     color: "text-[#DBFF00]",
     id: "4"
   },
   {
-    amount: "5% Ecosystem & Referrals",
+    amount: "30% Community Rewards",
     color: "text-[#33FF00]",
     id: "5"
   },
   {
-    amount: "15% Development",
+    amount: "10% Marketing/Partnership",
     color: "text-[#FFA409]",
     id: "6"
   },
   {
-    amount: "12% Marketing",
+    amount: "5% Reserve Fund",
     color: "text-[#00FFA3]",
     id: "7"
-  },
-  {
-    amount: "10% Operations",
-    color: "text-[#0094FF]",
-    id: "8"
-  },
-  {
-    amount: "8% Exchange & Liquidity",
-    color: "text-[#0019FF]",
-    id: "9"
-  },
-  {
-    amount: "10% Rewards",
-    color: "text-[#FF0099]",
-    id: "10"
-  },
-  {
-    amount: "2.5% General Reserve",
-    color: "text-[#000000]",
-    id: "11"
   },
 ];
 
@@ -139,6 +119,38 @@ export const partners = [
 ]
 
 export const communities = [
+  {
+    name: "Telegram",
+    link: "https://telegram.com",
+    logo: telegram,
+    id: "1"
+  },
+  {
+    name: "Instagram",
+    link: "https://instagram.com",
+    logo: instagram,
+    id: "2"
+  },
+  {
+    name: "X",
+    link: "https://x.com",
+    logo: x2,
+    id: "3"
+  },
+  {
+    name: "Facebook",
+    link: "https://facebook.com",
+    logo: facebook,
+    id: "4"
+  },
+  {
+    name: "Discord",
+    link: "https://discord.com",
+    logo: discord,
+    id: "5"
+  },
+]
+export const communities2 = [
   {
     name: "Telegram",
     link: "https://telegram.com",

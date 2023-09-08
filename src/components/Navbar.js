@@ -9,7 +9,7 @@ import { connectWallet } from '../redux/Presale/presale';
 import { successToast, errorToast, splitString } from '../utils';
 
 // ASSETS
-import { mainLogo } from '../assets/images';
+import { footbucksLogo } from '../assets/images';
 
 const Navbar = () => {
   const [curPath, setCurPath] = useState('');
@@ -39,7 +39,7 @@ const Navbar = () => {
     <header className="flex bg-[#685029] text-white">
       <nav className="flex my-4 mx-5 items-center justify-between gap-6 w-full">
         <a href="/" className="flex font-mono font-black text-xl justify-center items-center">
-          <img src={mainLogo} alt="main logo" />
+          <img src={footbucksLogo} alt="main logo" className=" w-[35px] h-[35px]" />
           FOOTBUCKS
         </a>
         <ul className="hidden md:flex items-center gap-3 font-mono">
@@ -56,7 +56,6 @@ const Navbar = () => {
             <li className=" hover:text-orange-500 hover:border hover:border-[#FD8002] rounded-lg"><a href="#home">Home</a></li>
           )}
           <li className=" hover:text-orange-500 hover:border hover:border-[#FD8002] rounded-lg"><a href="#about">About-Us</a></li>
-          <li className=" hover:text-orange-500 hover:border hover:border-[#FD8002] rounded-lg"><a href="#blogs">Blogs</a></li>
           <li className=" hover:text-orange-500 hover:border hover:border-[#FD8002] rounded-lg"><a href="#tokenomics">Tokenomics</a></li>
           <li className=" hover:text-orange-500 hover:border hover:border-[#FD8002] rounded-lg"><a href="#community">Community</a></li>
           <li className=" hover:text-orange-500 hover:border hover:border-[#FD8002] rounded-lg"><a href="#faq">FAQs</a></li>

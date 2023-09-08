@@ -120,11 +120,11 @@ const Presale = () => {
   return (
     <section className=" min-h-[100vh] flex flex-col items-center bg-black text-white">
       <div className=" w-full md:w-[70%] flex flex-col items-center px-[5%] md:m-0">
-        <h1 className=" font-extrabold text-2xl my-3">Own Your Favorite Club</h1>
+        <h1 className=" font-extrabold text-2xl my-3">Own the game, Own your passion</h1>
         <p className=" font-light italic text-center mb-4">
-          Lorem Ipsum dolor set sebrum lit rop prub frim Lorem
-          Ipsum dolor set sebrum lit rop prub frim Lorem
-          Ipsum dolor set sebrum .
+          Secure your spot in the future of football culture
+          and own your passion with FOOTBUCKS ($FBUK).
+          Participate in our Presale now!
         </p>
         <div>
           <button
@@ -141,9 +141,9 @@ const Presale = () => {
             <CountDownTImmer targetDate={targetDate} />
           </div>
           <ul className="flex flex-col gap-3 font-semibold my-4">
-            <li>Token Name: Footbucks</li>
-            <li>Presale Supply: 10,000,000,000,000FB</li>
-            <li>Presale Price: 1FB = 0.000004BNB</li>
+            <li>Token Name: $FBUK</li>
+            <li>Presale Supply: 500,000,000,000 $FBUK</li>
+            <li>Presale Price: 1$FBUK = 0.000000006BNB</li>
           </ul>
           <div className="flex flex-col justify-center items-center w-full italic">
             <span>Presale amount reached</span>
@@ -163,14 +163,14 @@ const Presale = () => {
           <span>
             You Will Get
             <span className=" font-bold text-lg mx-2">{formatNumber(tokenAmount)}</span>
-            FB Token
+            $FBUK Token
           </span>
           <button
             type="button"
             className="w-full bg-[#FFA409] py-2 rounded-lg my-4 hover:bg-orange-700"
             onClick={() => handleBuy()}
           >
-            BUY FB TOKEN NOW
+            BUY $FBUK TOKEN NOW
           </button>
         </div>
         <div className=" p-3 w-full rounded-lg border border-white mt-6">
