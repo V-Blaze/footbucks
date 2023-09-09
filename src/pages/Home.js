@@ -55,7 +55,7 @@ const Home = () => (
           </p>
         </div>
         <div className="flex">
-          <img src={footbucksLogo} alt="footbucks logo" className="logo-1 h-[350px] w-[350px] border border-orange-500 rounded-full" />
+          <img src={footbucksLogo} alt="footbucks logo" className="logo-1 h-[200px] w-auto md:h-[350px] md:w-[350px] border border-orange-500 rounded-full" />
         </div>
       </div>
     </section>
@@ -91,8 +91,10 @@ const Home = () => (
             The FOOTBUCKS Academy is our commitment to
             the growth and development of budding football talents
           </div>
-          <div className="relative bg-[#FFA409] text-black rounded-xl p-4 text-xs ">
-            <span className="absolute top-[-82px] right-[50%] border-r-2 border-black h-[85px]" />
+          <div className="relative bg-[#FFA409] text-black rounded-xl p-4 text-xs place-self-center md:place-self-start stretch h-full col-span-2 mx-[25%] md:col-span-1 md:mx-0 ">
+            <span className=" hidden md:block absolute top-[-82px] right-[50%] border-r-2 border-black h-[85px]" />
+            <span className=" md:hidden absolute top-[-100px] right-[26%] border-r-2 border-black h-[120px] rotate-45" />
+            <span className="md:hidden absolute top-[-100px] right-[74%] border-r-2 border-black h-[120px] -rotate-45" />
             ⚽ FOOTBUCKS Football Clubs:
             Our ecosystem takes you beyond
             the stands. Own a part of football history by investing
@@ -112,7 +114,7 @@ const Home = () => (
       />
     </section>
     <section className="mx-5 my-12 flex flex-col md:flex-row gap-6 md:gap-12">
-      <div className="flex flex-col gap-4">
+      <div className="flex flex-col gap-4 items-center justify-center">
         <div
           className=" "
         >
@@ -135,7 +137,7 @@ const Home = () => (
           </p>
         </div>
       </div>
-      <div className="flex flex-col gap-4">
+      <div className="flex flex-col gap-4 items-center justify-center">
         <div
           className=""
         >
@@ -164,28 +166,32 @@ const Home = () => (
       <div className=" text-white m-6  rounded-lg bg-gradient-to-r from-[#FFA409] via-[#a37423] to-[#1b1303]">
         <div className="bg-[#DDAC58] p-4 rounded-lg flex items-center justify-between">
           <span>Token Name</span>
-          <span>Footbucks</span>
+          <span>$FBUK</span>
         </div>
         <ul className=" p-4 flex flex-col gap-4">
           <li className="flex items-center justify-between">
+            <span>Total Supply:</span>
+            <span>10,000 billion</span>
+          </li>
+          <li className="flex items-center justify-between">
             <span>Initial Circulatory Supply:</span>
-            <span>$3.7m</span>
+            <span>2,000 billion</span>
           </li>
           <li className="flex items-center justify-between">
-            <span>Initial Market Cap:</span>
-            <span>$1.5m</span>
-          </li>
-          <li className="flex items-center justify-between">
-            <span>Estimated Listing Date:</span>
-            <span>Q3 2023</span>
+            <span>Estimated Initial Market Cap:</span>
+            <span>$13m</span>
           </li>
           <li className="flex items-center justify-between">
             <span>Token Type:</span>
             <span>BSC</span>
           </li>
           <li className="flex items-center justify-between">
-            <span>Toe Token Price:</span>
-            <span>$0.040</span>
+            <span>Token Price:</span>
+            <span>0.00000003BNB</span>
+          </li>
+          <li className="flex items-center justify-between">
+            <span>Estimated listing time:</span>
+            <span>Q4 2023</span>
           </li>
         </ul>
       </div>
@@ -216,16 +222,16 @@ const Home = () => (
         <div className="absolute bg-slate-500 top-0 bottom-0 left-0 right-0 flex justify-center items-center opacity-[90%] rounded-lg">
           <span className=" font-mono text-orange-500 font-bold text-3xl -rotate-45">COMING SOON!!!</span>
         </div>
-        <div className="h-[150px] w-[150px] bg-[#D9D9D9] rounded-lg">
+        <div className="h-auto w-auto bg-[#D9D9D9] rounded-lg">
           <img src={NFT1} alt="NFT1" className="rounded-lg" />
         </div>
-        <div className="h-[150px] w-[150px] bg-[#D9D9D9] rounded-lg">
+        <div className="h-auto w-auto bg-[#D9D9D9] rounded-lg">
           <img src={NFT2} alt="NFT1" className="rounded-lg" />
         </div>
-        <div className="h-[150px] w-[150px] bg-[#D9D9D9] rounded-lg">
+        <div className="h-auto w-auto bg-[#D9D9D9] rounded-lg">
           <img src={NFT1} alt="NFT1" className="rounded-lg" />
         </div>
-        <div className="h-[150px] w-[150px] bg-[#D9D9D9] rounded-lg">
+        <div className="h-auto w-auto bg-[#D9D9D9] rounded-lg">
           <img src={NFT2} alt="NFT1" className="rounded-lg" />
         </div>
       </div>

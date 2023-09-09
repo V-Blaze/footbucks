@@ -30,13 +30,13 @@ const Presale = () => {
   const address = useSelector((state) => state.Presale?.address);
   const dispatch = useDispatch();
 
-  const targetDate = '2023-09-30T00:00:00';
+  const targetDate = '2023-09-21T00:00:00';
   const statID = 'z9bpgnbhsya';
   const key = 'tokenSold';
 
   const handleChange = (e) => {
     const bnbAmount = e.target.value;
-    const fbRate = 250000; // 1 BNB equals 250,000 FB tokens
+    const fbRate = 166666666.67; // 1 BNB equals 166,666,666.67 FB tokens
     const fbAmount = bnbAmount * fbRate;
     setBNBAmount(bnbAmount);
     setTokenAmount(fbAmount);
@@ -136,7 +136,7 @@ const Presale = () => {
           </button>
         </div>
         <div className=" p-3 w-full rounded-lg border border-white">
-          <h4 className=" font-semibold ">Presale Ends In:</h4>
+          <h4 className=" font-semibold ">Presale Starts In:</h4>
           <div>
             <CountDownTImmer targetDate={targetDate} />
           </div>
@@ -162,13 +162,14 @@ const Presale = () => {
           />
           <span>
             You Will Get
-            <span className=" font-bold text-lg mx-2">{formatNumber(tokenAmount)}</span>
+            <span className=" font-bold text-lg mx-2">{formatNumber(tokenAmount.toFixed(2))}</span>
             $FBUK Token
           </span>
           <button
             type="button"
-            className="w-full bg-[#FFA409] py-2 rounded-lg my-4 hover:bg-orange-700"
+            className="w-full bg-[#FFA409] py-2 rounded-lg my-4 hover:bg-orange-700 "
             onClick={() => handleBuy()}
+            disabled
           >
             BUY $FBUK TOKEN NOW
           </button>
@@ -191,7 +192,11 @@ const Presale = () => {
               <span className=" font-bold text-sm italic mx-2">Please Connect Wallet</span>
             )}
           </h4>
-          <h5>Referral Reward: Comming Soon...</h5>
+          <h5>
+            Referral Reward: Coming Soon On
+            <span className=" text-sm italic text-[#FFA409]"> 05/10/2023 </span>
+            ...
+          </h5>
         </div>
       </div>
     </section>
