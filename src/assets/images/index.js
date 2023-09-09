@@ -17,9 +17,11 @@ import copyRight from './copyright.svg';
 import footbucksLogo from './footbucks-logo.png';
 import NFT1 from './NFT1.jpeg';
 import NFT2 from './NFT2.jpeg';
+import bucksHero from './bucks-hero.jpg';
 
 export {
   mainLogo, logo1, logo2, teamPic, partnerLogo,
   telegram, instagram, x, facebook, discord, footerLogo,
   missionIcon, vissionIcon, heroGif, copyRight, x2, footbucksLogo, NFT1, NFT2,
+  bucksHero,
 };

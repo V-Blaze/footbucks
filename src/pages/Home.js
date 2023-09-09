@@ -10,7 +10,7 @@ import {
 
 // ASSETS
 import {
-  footbucksLogo, missionIcon, vissionIcon, heroGif, NFT1, NFT2,
+  footbucksLogo, missionIcon, vissionIcon, bucksHero, NFT1, NFT2,
 } from '../assets/images';
 
 // CONSTANTS
@@ -23,15 +23,10 @@ import openInNewTab from '../utils';
 
 const Home = () => (
   <>
-    <section id="home" className="relative flex flex-col h-[80vh] bg-[#D9D9D9] justify-between items-center">
+    <section id="home" className="relative flex flex-col h-[80vh] bg-[#D9D9D9] justify-end items-center">
       <div className="absolute inset-0">
-        <img src={heroGif} alt="Background GIF" className="object-cover w-full h-full" />
+        <img src={bucksHero} alt="Background hero" className=" object-fill w-full h-full" />
       </div>
-      <h1
-        className="relative z-10 flex items-start border-none outline-none text-5xl text-[#FFA409] font-extrabold mt-[5%]"
-      >
-        FOOTBUCKS
-      </h1>
       <button
         type="button"
         className="relative z-10 flex items-center border-none outline-none text-white font-bold
@@ -55,7 +50,7 @@ const Home = () => (
           </p>
         </div>
         <div className="flex">
-          <img src={footbucksLogo} alt="footbucks logo" className="logo-1 h-[200px] w-auto md:h-[350px] md:w-[350px] border border-orange-500 rounded-full" />
+          <img src={footbucksLogo} alt="footbucks logo" className="logo-1 h-[200px] w-auto md:h-[300px] md:w-[300px] lg:h-[350px] lg:w-[350px] border border-orange-500 rounded-full" />
         </div>
       </div>
     </section>

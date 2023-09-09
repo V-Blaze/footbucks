@@ -167,9 +167,8 @@ const Presale = () => {
           </span>
           <button
             type="button"
-            className="w-full bg-[#FFA409] py-2 rounded-lg my-4 hover:bg-orange-700 "
+            className="w-full bg-[#FFA409] py-2 rounded-lg my-4 hover:bg-orange-700 disabled:bg-[#f8e2bd] disabled:text-gray-800"
             onClick={() => handleBuy()}
-            disabled
           >
             BUY $FBUK TOKEN NOW
           </button>
