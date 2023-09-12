@@ -136,7 +136,7 @@ const Presale = () => {
           </button>
         </div>
         <div className=" p-3 w-full rounded-lg border border-white">
-          <h4 className=" font-semibold ">Presale Starts In:</h4>
+          <h4 className=" font-semibold ">Presale Ends In:</h4>
           <div>
             <CountDownTImmer targetDate={targetDate} />
           </div>
