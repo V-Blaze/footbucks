@@ -7,16 +7,6 @@ export const ABI = [
         "type": "address"
       },
       {
-        "internalType": "address",
-        "name": "_communityWalletAddress",
-        "type": "address"
-      },
-      {
-        "internalType": "uint256",
-        "name": "_rewardPercentage",
-        "type": "uint256"
-      },
-      {
         "internalType": "uint256",
         "name": "_launchTimestamp",
         "type": "uint256"
@@ -61,19 +51,6 @@ export const ABI = [
     "name": "buyTokens",
     "outputs": [],
     "stateMutability": "payable",
-    "type": "function"
-  },
-  {
-    "inputs": [],
-    "name": "communityWallet",
-    "outputs": [
-      {
-        "internalType": "address",
-        "name": "",
-        "type": "address"
-      }
-    ],
-    "stateMutability": "view",
     "type": "function"
   },
   {
@@ -207,19 +184,6 @@ export const ABI = [
   {
     "inputs": [],
     "name": "pricePerTokenInWei",
-    "outputs": [
-      {
-        "internalType": "uint256",
-        "name": "",
-        "type": "uint256"
-      }
-    ],
-    "stateMutability": "view",
-    "type": "function"
-  },
-  {
-    "inputs": [],
-    "name": "referralRewardPercentage",
     "outputs": [
       {
         "internalType": "uint256",

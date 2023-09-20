@@ -121,13 +121,13 @@ export const partners = [
 export const communities = [
   {
     name: "Telegram",
-    link: "https://t.me/thefootbucksofficialgroup",
+    link: "https://t.me/footbucksOfficialGroup",
     logo: telegram,
     id: "1"
   },
   {
     name: "Instagram",
-    link: "https://instagram.com",
+    link: "https://www.instagram.com/invites/contact/?i=1euyswiyw3uke&utm_content=s5x0r8t",
     logo: instagram,
     id: "2"
   },
@@ -153,13 +153,13 @@ export const communities = [
 export const communities2 = [
   {
     name: "Telegram",
-    link: "https://t.me/thefootbucksofficialgroup",
+    link: "https://t.me/footbucksOfficialGroup",
     logo: telegram,
     id: "1"
   },
   {
     name: "Instagram",
-    link: "https://instagram.com",
+    link: "https://www.instagram.com/invites/contact/?i=1euyswiyw3uke&utm_content=s5x0r8t",
     logo: instagram,
     id: "2"
   },

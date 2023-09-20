@@ -30,7 +30,7 @@ const Presale = () => {
   const address = useSelector((state) => state.Presale?.address);
   const dispatch = useDispatch();
 
-  const targetDate = '2023-09-21T00:00:00';
+  const targetDate = '2023-10-05T00:00:00';
   const statID = 'z9bpgnbhsya';
   const key = 'tokenSold';
 

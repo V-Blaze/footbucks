@@ -6,7 +6,7 @@ import { ethers } from '../../web3/ethers';
 import { db } from '../../firebase';
 import { ABI } from '../../web3/Abi';
 
-const contractAddress = '0xdbF47E033B6FA143f9635C379B65886FA7f17bEc';
+const contractAddress = '0x3C12006713dDDdb8BFd552b611c28Bb899186f63';
 
 const initialState = {
   loading: false,
