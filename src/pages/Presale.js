@@ -30,7 +30,8 @@ const Presale = () => {
   const address = useSelector((state) => state.Presale?.address);
   const dispatch = useDispatch();
 
-  const targetDate = '2023-10-05T00:00:00';
+  const targetDate = '2023-10-10T12:00:00';
+  // const targetDate = '2023-09-21T12:00:00';
   const statID = 'z9bpgnbhsya';
   const key = 'tokenSold';
 
@@ -43,9 +44,9 @@ const Presale = () => {
   };
 
   const handleBuy = () => {
-    if (!BNBAmount || BNBAmount < 0.001) return errorToast('BNB Must be greater than 0.001');
+    if (!BNBAmount || BNBAmount < 0.05) return errorToast('BNB Must be greater than 0.05');
     if (!isConnected) return errorToast('Please Connect Your Wallet');
-    if (chainId !== 97) return errorToast('Please Connect to BSC Network');
+    if (chainId !== 56) return errorToast('Please Connect to BSC Network');
 
     dispatch(buyPresale(BNBAmount)).then((res) => {
       if (res.error) {
@@ -93,7 +94,7 @@ const Presale = () => {
       if (res.error) {
         errorToast(res.payload);
       } else {
-        const totalAirdrop = 1000000;
+        const totalAirdrop = 500000000000;
         const totalSold = res.payload.tokenSold;
         const percentage = (totalSold / totalAirdrop) * 100;
         setPercent(Math.ceil(percentage));
@@ -144,6 +145,7 @@ const Presale = () => {
             <li>Token Name: $FBUK</li>
             <li>Presale Supply: 500,000,000,000 $FBUK</li>
             <li>Presale Price: 1$FBUK = 0.000000006BNB</li>
+            <li>Minimum Buy: 0.05BNB</li>
           </ul>
           <div className="flex flex-col justify-center items-center w-full italic">
             <span>Presale amount reached</span>
@@ -193,7 +195,7 @@ const Presale = () => {
           </h4>
           <h5>
             Referral Reward: Coming Soon On
-            <span className=" text-sm italic text-[#FFA409]"> 05/10/2023 </span>
+            <span className=" text-sm italic text-[#FFA409]"> 10/10/2023 </span>
             ...
           </h5>
         </div>
